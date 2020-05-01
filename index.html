@@ -1,0 +1,50 @@
+<!--
+-fill in the questions and answers
+-fill in text for start prompt
+-set up scoreboard and button to access it. clear box and publish score / initials
+-fix timer, it goes past zero
+-pressing start button should restart everything; timer, questions, etc
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+
+
+    <!--Webpage Title-->
+    <title>Timed Quiz</title>
+
+
+</head>
+
+
+<body>
+    <div class="container">
+        <span 
+            style='background-color:aqua; position: fixed;left:5vw;top:5vh;width:10vw;height:vw;border-radius:5vw'><h1 id="timeSpan"></h1></span>
+        <button class="btn btn-lg btn-primary" id="q1">START</button>
+        <button class="btn btn-lg btn-primary" id="hS">Recent Scores</button>
+        
+        <div id="qContainer" class="hide row">
+            <div class="col-md-8">
+                <div class="row" id="qdiv"></div>
+                <div class="row" id="adiv"></div>
+            </div>
+        </div>
+        <div id="scoreBoard" class="hide row">
+            <h3>Score Board</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
